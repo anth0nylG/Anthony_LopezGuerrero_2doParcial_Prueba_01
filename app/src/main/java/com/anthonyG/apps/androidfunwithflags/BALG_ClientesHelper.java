@@ -2,14 +2,16 @@ package com.anthonyG.apps.androidfunwithflags;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.Nullable;
 
-public class BALG_ClientesHelper {
+public class BALG_ClientesHelper extends SQLiteOpenHelper {
     private String createTable_Clientes = "CREATE TABLE Clientes " +
             "(Codigo INTEGER PRIMARY KEY AUTOINCREMENT, " + "Nombre TEXT, " +
             "Apellido TEXT, " + "Correo TEXT )";
 
-    public ClientesHelper(@Nullable Context context, @Nullable String name,
-                          @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+    public BALG_ClientesHelper(@Nullable Context context, @Nullable String name,
+                               @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 

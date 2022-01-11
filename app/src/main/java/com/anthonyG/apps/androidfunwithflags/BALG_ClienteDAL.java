@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 
 public class BALG_ClienteDAL {
-    private ClientesHelper clientesHelper; // crea la BD
+    private BALG_ClientesHelper clientesHelper; // crea la BD
     private SQLiteDatabase sql;
     private Context context;
 
@@ -17,7 +17,7 @@ public class BALG_ClienteDAL {
     }
 
     public void openDAL(){
-        clientesHelper=new ClientesHelper(context,"ClientesDB",null,1);
+        clientesHelper=new BALG_ClientesHelper(context,"ClientesDB",null,1);
         sql=clientesHelper.getWritableDatabase();
     }
 
@@ -53,7 +53,7 @@ public class BALG_ClienteDAL {
 
             if(cursor.moveToFirst())
             {
-                cliente = new Cliente();
+                cliente = new BALG_Cliente();
                 cliente.setNombre(cursor.getString(1));
                 cliente.setApellido(cursor.getString(2));
                 cliente.setCorreo(cursor.getString(3));
