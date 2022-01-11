@@ -1,6 +1,5 @@
 package com.anthonyG.apps.androidfunwithflags;
 
-import android.view.View;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -12,7 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class BALG_CrudClientes {
+public class BALG_CrudClientes extends AppCompatActivity {
+
     private EditText editTextCodigo;
     private EditText editTextNombre;
     private EditText editTextApellido;
@@ -25,11 +25,10 @@ public class BALG_CrudClientes {
     private Button buttonDelete;
     private Button buttonEddit;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_balg_crud_clients);
+        setContentView(R.layout.activity_balg_crud_clientes);
 
         editTextCodigo = findViewById(R.id.editTextCodigo);
         editTextNombre = findViewById(R.id.editTextNombre);
@@ -42,7 +41,6 @@ public class BALG_CrudClientes {
         buttonFind = findViewById(R.id.button_buscar);
         buttonDelete = findViewById(R.id.button_eliminar);
         buttonEddit = findViewById(R.id.button_editar);
-
 
         buttonInsert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +70,6 @@ public class BALG_CrudClientes {
             }
         });
     }
-
 
     public void onClicInsertar(View view){
         this.InsertarConClase();
