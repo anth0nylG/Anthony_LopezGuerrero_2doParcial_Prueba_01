@@ -35,7 +35,7 @@ public class BALG_CrudClientes extends AppCompatActivity {
         editTextApellido = findViewById(R.id.editTextApellido);
         editTextCorreo = findViewById(R.id.editTextCorreo);
         editTextUsr = findViewById(R.id.editTextUsr);
-        editTextPasswd = findViewById(R.id.editTextTextPassword);
+        editTextPasswd = findViewById(R.id.editTextPassword);
 
         buttonInsert = findViewById(R.id.button_insertar);
         buttonFind = findViewById(R.id.button_buscar);
