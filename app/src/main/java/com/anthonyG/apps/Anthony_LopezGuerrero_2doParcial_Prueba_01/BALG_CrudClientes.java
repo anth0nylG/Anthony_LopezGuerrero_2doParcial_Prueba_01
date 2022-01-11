@@ -1,11 +1,8 @@
-package com.anthonyG.apps.androidfunwithflags;
+package com.anthonyG.apps.Anthony_LopezGuerrero_2doParcial_Prueba_01;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
