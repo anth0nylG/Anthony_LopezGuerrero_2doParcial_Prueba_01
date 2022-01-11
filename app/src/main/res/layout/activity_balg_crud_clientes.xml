@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/et_Codigo"
-        android:hintTextColor="#546E7A"
         android:inputType="textPersonName"
         android:minHeight="48dp" />
 
