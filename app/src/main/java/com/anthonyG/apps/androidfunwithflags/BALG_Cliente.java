@@ -5,15 +5,19 @@ public class BALG_Cliente {
     private String nombre;
     private String apellido;
     private String correo;
+    private String usr;
+    private String passwd;
 
     public BALG_Cliente() {
     }
 
-    public BALG_Cliente(int codigo, String nombre, String apellido, String correo) {
+    public BALG_Cliente(int codigo, String nombre, String apellido, String correo, String usr, String passwd) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
+        this.usr = usr;
+        this.passwd = passwd;
     }
 
     public BALG_Cliente(String nombre, String apellido, String correo) {
@@ -52,5 +56,21 @@ public class BALG_Cliente {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getUsr() {
+        return usr;
+    }
+
+    public void setUsr(String usr) {
+        this.usr = usr;
+    }
+
+    public String getPasswd() {
+        return passwd;
+    }
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
     }
 }
